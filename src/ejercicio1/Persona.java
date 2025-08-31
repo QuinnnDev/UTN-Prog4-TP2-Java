@@ -33,11 +33,6 @@ public class Persona {
 		this.email = email;
 	}
 	
-	public Persona(String dni)
-	{
-		this.dni = dni;
-	}
-
 	//Métodos
 	public String toString() {
 		return "DNI = " + dni + ", Nombre = " + nombre + ", Apellido = " + apellido + ", Fecha de nacimiento = " + fechaNacimiento +

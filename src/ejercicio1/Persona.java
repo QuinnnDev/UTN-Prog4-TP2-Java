@@ -32,10 +32,26 @@ public class Persona {
 		this.telefono = telefono;
 		this.email = email;
 	}
+	
+	public Persona(String dni)
+	{
+		this.dni = dni;
+	}
 
 	//Métodos
 	public String toString() {
 		return "DNI = " + dni + ", Nombre = " + nombre + ", Apellido = " + apellido + ", Fecha de nacimiento = " + fechaNacimiento +
 				", Género = " + genero + ", Dirección = " + direccion + ", Teléfono = " + telefono + ", Email = " + email;
 	}	
+	
+	public static void verificarDNI(String dni) throws ExVerificarDNI {
+	    if (dni == null || dni.length() != 8) throw new ExVerificarDNI();
+
+	    for (int i = 0; i < dni.length(); i++) {
+	        if (!Character.isDigit(dni.charAt(i))) {
+	            throw new ExVerificarDNI();
+	        }
+	    }
+	}
 }
+

@@ -6,6 +6,6 @@ public class ExVerificarDNI extends RuntimeException{
 	
 	@Override
 	public String getMessage() {
-		return "El DNI ingresado es inválido";
+		return "Persona no agregada por no verificar el DNI";
 	}
 }

@@ -3,7 +3,7 @@ package ejercicio1;
 import java.time.LocalDate;
 import java.util.*;
 
-public class MainEjercicio1_b {
+public class MainEjercicio1_c {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,21 +14,13 @@ public class MainEjercicio1_b {
 		Empleado p4 = new Empleado("12345681", "Jorge", "El Curioso", 	LocalDate.of(2006, 10, 11), "masculino", "Belgrano 124", "44444444", "asdf4@gmail.com", "jefe");
 		Empleado p5 = new Empleado("12345682", "Leandro", "Paredes", 	LocalDate.of(1997,12,11), "masculino", "Formosa 1111", "55555555", "asdf5@gmail.com", "seguridad");
 		
-		 List<Empleado> listaEmp = new ArrayList<>();
+		 Set<Empleado> listaEmp = new TreeSet<>();
 	        listaEmp.add(p1);
 	        listaEmp.add(p2);
 	        listaEmp.add(p3);
 	        listaEmp.add(p4);
 	        listaEmp.add(p5);
 	        
-		
-		Iterator<Empleado>it = listaEmp.iterator();
-		
-	   while(it.hasNext()) {
-		   Empleado e = it.next();
-		   System.out.println(e);
-	        }
-		
 		System.out.println("aaa fin del programa");
 	}
 

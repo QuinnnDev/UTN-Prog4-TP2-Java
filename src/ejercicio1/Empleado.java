@@ -3,7 +3,7 @@ package ejercicio1;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona implements Comparable<Empleado>{
 	
 	//Atributos
 	private final int legajo;
@@ -33,11 +33,17 @@ public class Empleado extends Persona{
 		return super.toString() + ", Legajo = " + legajo + ", Puesto = " + puesto;
 	}
 	
+    @Override
 	public int compareTo(Empleado o) {
 		
 		if(o.legajo == this.legajo) return 0;
 			
-			if(o.legajo<this.legajo) { return -1;} return 1;}
+		if(o.legajo<this.legajo) 
+		{ 
+			return -1;
+		}
+		
+		return 1;}
 	
     @Override
 	public int hashCode() {

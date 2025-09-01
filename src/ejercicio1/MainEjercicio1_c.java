@@ -21,7 +21,10 @@ public class MainEjercicio1_c {
 	        listaEmp.add(p4);
 	        listaEmp.add(p5);
 	        
-		System.out.println("aaa fin del programa");
+		Iterator<Empleado> it = listaEmp.iterator();
+		
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
 	}
-
 }

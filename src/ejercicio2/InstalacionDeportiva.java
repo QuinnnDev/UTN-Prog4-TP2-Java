@@ -1,10 +1,16 @@
 package ejercicio2;
 
-public class InstalacionDeportiva {
+public class InstalacionDeportiva implements IGetTipoDeInstalacion {
     private int tipoDeInstalacion;
 
     public InstalacionDeportiva(int tipoDeInstalacion) {
         this.tipoDeInstalacion = tipoDeInstalacion;
     }
+    
+    @Override
+    public int getTipoDeInstalacion () {
+    	return tipoDeInstalacion;
+    }
+    
  
 }

@@ -18,6 +18,11 @@ public class Edificio implements IGetSuperficieEdificio{
 		// TODO Auto-generated method stub
 		return superficie;
 	}
+
+	@Override
+	public String toString() {
+		return "superficie: " + superficie;
+	}
 	 
 	
 }

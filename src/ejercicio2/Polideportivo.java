@@ -1,16 +1,16 @@
 package ejercicio2;
 
-public class Polideportivo implements IGetTipoDeInstalacion, IGetSuperficieEdificio{
+public class Polideportivo extends InstalacionDeportiva implements IGetSuperficieEdificio{
 	
 	private double superficie;
 	private String nombre;
-	private int tipoInstalacion;
 	
 	
+
 	public Polideportivo(double superficie, String nombre, int tipoDeInstalacion) {
+		super(tipoDeInstalacion);
 		this.superficie = superficie;
 		this.nombre = nombre;
-		this.tipoInstalacion = tipoDeInstalacion;
 	}
 	
 	public String getNombre() {
@@ -23,18 +23,17 @@ public class Polideportivo implements IGetTipoDeInstalacion, IGetSuperficieEdifi
 	public double getSuperficieEdificio() {
 		return superficie;
 	}
-
-	public int getTipoDeInstalacion() {
-		return tipoInstalacion;
-	}
-	
-	public void setTipoDeInstalacion(int tipo) {
-		this.tipoInstalacion = tipo;
-	}
 	
 	public void setSuperficie(double superficie) {
 		this.superficie = superficie;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Polideportivo nombre: " + nombre + "superficie: " + superficie + 
+				", " +  super.toString();
+	}
+
 
 }

@@ -2,11 +2,18 @@ package ejercicio2;
 
 public class EdificioDeOficinas extends Edificio {
 
-	public EdificioDeOficinas(Double superficie) {
+	int cantidadOficinas;
+	
+	public EdificioDeOficinas(Double superficie, int cantidadOficinas) {
 		super(superficie);
+		this.cantidadOficinas = cantidadOficinas;
 	}
 
-	int cantidadOficinas;
+	@Override
+	public String toString() {
+		return "EdificioDeOficinas " + super.toString() +", " + "cantidadOficinas: " + cantidadOficinas;
+	}
+
 	
 	
 }

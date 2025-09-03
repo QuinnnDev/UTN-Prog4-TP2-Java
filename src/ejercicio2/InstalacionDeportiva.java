@@ -11,6 +11,11 @@ public class InstalacionDeportiva implements IGetTipoDeInstalacion {
     public int getTipoDeInstalacion () {
     	return tipoDeInstalacion;
     }
+
+	@Override
+	public String toString() {
+		return "Instalacion tipo: " + tipoDeInstalacion;
+	}
     
  
 }

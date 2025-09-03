@@ -1,15 +1,19 @@
 package ejercicio2;
 
+import java.util.ArrayList;
+
 public class MainEjercicio2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		ArrayList<Object> Lista = new ArrayList<>();
+		
+		Lista.add(new Polideportivo(2500.0, "Poli Norte", 1));
+        Lista.add(new Polideportivo(3800.0, "Poli Sur", 2));
+        Lista.add(new Polideportivo(3100.0, "Poli Centro", 1));
 
-		System.out.println("texto para ver si funcion, borrenlo cuando haya algo mas xd");
-		
-		
-		
+        Lista.add(new EdificioDeOficinas(5600.0));
+        Lista.add(new EdificioDeOficinas(4200.0));
 		
 	}
-
 }

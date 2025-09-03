@@ -1,6 +1,6 @@
 package ejercicio2;
 
-public class Edificio {
+public class Edificio implements IGetSuperficieEdificio{
 
 	 private Double superficie;
 	 
@@ -9,12 +9,14 @@ public class Edificio {
 		this.superficie = superficie;
 	}
 
-	public Double getSuperficie() {
-		return superficie;
-	}
-
 	public void setSuperficie(Double superficie) {
 		this.superficie = superficie;
+	}
+
+	@Override
+	public double getSuperficieEdificio() {
+		// TODO Auto-generated method stub
+		return superficie;
 	}
 	 
 	
